@@ -1,4 +1,3 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipelines.pipeline import run_research_pipeline
 
-results = scrape_url.func("https://www.sciencedaily.com/news/computers_math/artificial_intelligence")
-print(results)
+run_research_pipeline("What is the impact of ai on jobs in 2026?")
